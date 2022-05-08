@@ -7,3 +7,15 @@ d
 cách để lấy code từ nhánh khác về nhánh mình
 git merge
 git rebase
+
+git restore: đưa về trạng thái chưa stage
+git reset: đưa (2) => (1)
+git reset --soft: (3) => (2)
+git reset --hard: xóa sạch và đưa head về commit trước đấy
+
+stage(đang thay đổi)(1) => working tree(sẵn sàng commit)(2) => đã commit(3)
+
+git stash: khi có sự thay đổi mà chưa muốn commit, thì nó sẽ lưu mọi sự thay đổi vào stack và clear
+trạng thái đang làm việc
+git stash clear
+git stash apply 'stash_id'
